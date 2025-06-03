@@ -492,7 +492,6 @@ onMounted(() => {
   const internalOpts = props.cmOptions || {};
   const opts = {
     ...cmDefaults,
-    mode: props.mode || cmDefaults.mode,
     ...userOpts,
     ...theme && { theme },
     ...internalOpts, // internal options passed via `props` have the highest priority
